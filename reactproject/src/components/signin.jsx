@@ -6,10 +6,9 @@ import PageHeader from "./common/PageHeader";
 import FormikValidate from "./validate/formvalidate";
 import {Navigate, useNavigate} from "react-router-dom"
 import { toast } from "react-toastify";
-import { loginUser } from "./services/userservice";
 import { useAuth } from "./context/authcontext";
 
-const signIn=({redirect})=>{
+const SignIn=({redirect})=>{
     
     const[error,setError]=useState("");
 const{login,logout,user}=useAuth();
@@ -60,4 +59,4 @@ if(user){
     </>
     )
     }
-export default signIn;
+export default SignIn;

@@ -5,7 +5,7 @@ import About from './components/About';
 import Homepage from './components/Homepage';
 import { Route, Routes } from 'react-router-dom';
 import SignUp from './components/SingUp';
-import Signin from './components/signin';
+import SignIn from './components/signin';
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import LogOut from './components/logout';
@@ -25,7 +25,7 @@ function App() {
   <main className="container flex-fill">
   <Routes>
   <Route path="SignUp" element={<SignUp redirect="/signin" />}/>
-  <Route path="signin" element={<Signin redirect="/"/>}/>
+  <Route path="signin" element={<SignIn redirect="/"/>}/>
   <Route path="signout" element={<LogOut redirect="/"/>}/>
   <Route path="signupbiz" element={<SignUpBiz redirect="/my-cards/creat-card"/>}/>
     <Route path="/" element={<Homepage/>}/>
